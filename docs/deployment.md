@@ -17,6 +17,25 @@ Backend and application releases run through this repository's dispatch workflow
 Consult their latest runs for deployment status; foundation creation alone does
 not mean the hosted app is live.
 
+## Production release, 2026-11-17
+
+- App: <https://fpa-app-five.vercel.app/>.
+- Native gRPC gateway: <https://fpa-gateway-production-vf6f7gpcya-no.a.run.app>.
+- Native gRPC adapter: <https://fpa-adapter-production-vf6f7gpcya-no.a.run.app>.
+- [Backend CI](https://github.com/Zizico2/fpa-infra/actions/runs/44110114152):
+  passed image builds, real-source container checks, reviewed-plan apply and hosted
+  adapter/gateway/cache smoke tests.
+- [App CI](https://github.com/Zizico2/fpa-infra/actions/runs/44113328409): passed
+  the prebuilt production release and desktop/mobile browser checks.
+- App revision: `74b9e58e8269207f65e31ebc167871a14a473490`;
+  release infrastructure revision: `79e0e886f34d87096a84182c9ed603c0f87f5231`.
+
+Additional checks confirmed results and standings for PO01, PO01A, PO02 and PO03,
+multiple PO03 zones, and 2025/26 history through the hosted gateway. The public app
+domain returned HTTP 200. Initial Cloud Run and Vercel error-log scans were clear;
+no external Vercel log drains are configured. These are release-time checks, not
+continuous monitoring. Staging workspaces exist but staging is not deployed.
+
 For another installation, use a dedicated billing-enabled GCP project. Apply `providers/cloud-run/bootstrap`
 with this repository's numeric GitHub identity and the intended owner identity.
 Configure staging/production HCP workspaces, repository variables and secrets as
