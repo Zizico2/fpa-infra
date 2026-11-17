@@ -1,0 +1,22 @@
+{
+  "fpa-proxy": {
+    "repository": "https://github.com/Zizico2/fpa-proxy.git",
+    "revision": "ea2216d1b535f2792d784710b3f84234a04c1cf0"
+  },
+  "fpa-gateway": {
+    "repository": "https://github.com/Zizico2/fpa-gateway.git",
+    "revision": "001c193c4c129d69a77467208f609fcaf5c16892"
+  },
+  "fpa-proto": {
+    "repository": "https://github.com/Zizico2/fpa-proto.git",
+    "revision": "d4d42cfc97d2eb48936f3ce2f87eed953c857780"
+  },
+  "fpa-openapi": {
+    "repository": "https://github.com/Zizico2/fpa-openapi.git",
+    "revision": "84bf6a7df7716c1e24ef65eb18d3e09a060195c3"
+  },
+  "fpa-app": {
+    "repository": "https://github.com/Zizico2/fpa-app.git",
+    "revision": "74b9e58e8269207f65e31ebc167871a14a473490"
+  }
+}

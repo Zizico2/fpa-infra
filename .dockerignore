@@ -1,0 +1,10 @@
+**
+!containers/
+!containers/entrypoint.sh
+!.sources/
+!.sources/fpa-proxy/
+!.sources/fpa-proxy/**
+!.sources/fpa-gateway/
+!.sources/fpa-gateway/**
+.sources/**/.git
+.sources/**/target
